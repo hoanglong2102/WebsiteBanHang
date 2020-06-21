@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 
+3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<!-- User Page -->
+	<definition name="user-users" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/users.jsp" />
+	</definition>
+
+	<definition name="user-userDetail" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userDetail.jsp" />
+	</definition>
+
+	<definition name="user-searchUser" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/searchUser.jsp" />
+	</definition>
+	
+	<definition name="profile-changePasswordSuccess" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/changePasswordSuccess.jsp" />
+	</definition>
+	
+	
+	<!-- Product Page -->
+	<definition name="product-products"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/products.jsp" />
+	</definition>
+
+	<!-- ProductDetail Page -->
+	<definition name="product-productDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/productDetail.jsp" />
+	</definition>
+
+	<definition name="product-productUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/productUpdate.jsp" />
+	</definition>
+	<definition name="product-searchProduct"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/searchProduct.jsp" />
+	</definition>
+	<!-- Category Page -->
+	<definition name="category-categories"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categories.jsp" />
+	</definition>
+
+	<!-- CategoryDetail Page -->
+	<definition name="category-categoryDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categoryDetail.jsp" />
+	</definition>
+
+	<definition name="category-categoryUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categoryUpdate.jsp" />
+	</definition>
+	<definition name="category-searchCategory"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/searchCategory.jsp" />
+	</definition>
+
+	<definition name="profile" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/profile.jsp" />
+	</definition>
+	
+
+	<definition name="user-users" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/users.jsp" />
+	</definition>
+
+	<definition name="user-userDetail" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userDetail.jsp" />
+	</definition>
+
+	<definition name="user-userUpdate" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userUpdate.jsp" />
+	</definition>
+	
+	
+	<!-- Order Page -->
+	<definition name="order-orders" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orders.jsp" />
+	</definition>
+
+	<definition name="order-print" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/print.jsp" />
+	</definition>
+	<definition name="order-orderDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderDetail.jsp" />
+	</definition>
+
+	<definition name="order-orderUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderUpdate.jsp" />
+	</definition>
+
+	<definition name="order-searchOrder"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrder.jsp" />
+	</definition>
+	
+	<definition name="order-searchOrderByName"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrderByName.jsp" />
+	</definition>
+	
+	<definition name="order-searchOrderByDatesAndTime"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrderByDatesAndTime.jsp" />
+	</definition>
+
+	<!-- OrderDetail Page -->
+	<definition name="orderDetail-orders"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orders.jsp" />
+	</definition>
+
+	<definition name="orderDetail-orderUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orderUpdate.jsp" />
+	</definition>
+
+	<definition name="orderDetail-orderDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orderDetail.jsp" />
+	</definition>
+
+	<!-- Customer Page -->
+	<definition name="customer-customers"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customers.jsp" />
+	</definition>
+
+	<definition name="customer-customerDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customerDetail.jsp" />
+	</definition>
+
+	<definition name="customer-customerUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customerUpdate.jsp" />
+	</definition>
+	<definition name="customer-searchCustomer"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/searchCustomer.jsp" />
+	</definition>
+	
+	<definition name="user-changepassword"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/changepassword.jsp" />
+	</definition>
+	
+	<definition name="customer-customerAdd"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customer/customerAdd.jsp" />
+	</definition>
+	
+
+	<!-- Manufacturer Page -->
+	<definition name="manufacturer-manufacturers"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturers.jsp" />
+	</definition>
+
+	<definition name="manufacturer-manufacturerDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerDetail.jsp" />
+	</definition>
+
+	<definition name="manufacturer-manufacturerUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/manufacturerUpdate.jsp" />
+	</definition>
+	<definition name="manufacturer-searchManufacturer"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manufacturer/searchManufacturer.jsp" />
+	</definition>
+
+</tiles-definitions>

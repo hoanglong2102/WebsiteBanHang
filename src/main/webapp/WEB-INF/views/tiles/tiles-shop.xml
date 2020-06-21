@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> <!-- Base Definition -->
+	<definition name="shop-base-definition"
+		template="/WEB-INF/views/tiles/layouts/shop/shopLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/shop/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/shop/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/shop/defaultFooter.jsp" />
+	</definition>
+
+	<!-- https://blackrockdigital.github.io/startbootstrap-shop-homepage/ -->
+	<!-- Home Page -->
+	<definition name="shop-home" extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/home.jsp" />
+	</definition>
+	<definition name="shop-product"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/product.jsp" />
+	</definition>
+
+	<definition name="shop-shoppingCart"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/cart/shoppingCart.jsp" />
+	</definition>
+
+	<definition name="shop-checkOut"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/cart/checkOut.jsp" />
+	</definition>
+
+	<definition name="shop-shoppingCartConfirmation"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/cart/shoppingCartConfirmation.jsp" />
+	</definition>
+
+	<definition name="shop-shoppingCartFinalize"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/cart/shoppingCartFinalize.jsp" />
+	</definition>
+
+	<!-- Home about -->
+	<definition name="shop-about" extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/about.jsp" />
+	</definition>
+
+	<definition name="shop-search"
+		extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/search.jsp" />
+	</definition>
+	<definition name="shop-list" extends="shop-base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/shop/list.jsp" />
+	</definition>
+</tiles-definitions>
